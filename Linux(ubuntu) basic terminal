@@ -1,0 +1,68 @@
+https://www.researchgate.net/publication/299579774_Common_Linux_Ubuntu_Commands_Overview
+https://www.hostinger.com/tutorials/linux-commands
+
+pwd
+cd
+a   //hidden files
+-l  //in a form of list
+-R  //means recursive subdirectory ki subdirectories to display means andr ke andr ke andr sab kutch display kr deta ha
+history
+cd /mnt or ls/mnt
+nano   //open the file in terminal
+cat   //display content of the file
+touch  //create file 
+mkdir  //create directory
+rmdir  //delete empty directory
+rm //delete file in a directory
+rm -r  //delete a darectory containing files
+mv (//file name) (//directory name)  //move file into directory
+../  //for getting out of the dir   :dir=directory
+cp (//file name) (//directory name)  //copy file into directory
+touch .sobi.txt  //hidden file create hotti ha agar shuro mai .(dot) laga do
+clear  //for clearing the cmd
+echo sssssss //printing on console
+printf "Helo world \n"  //printing on console
+
+note:- aik he name ki files linux mai banaye ja skti ha but windows mai nahi bnaye ja skti for eg:- fayez.txt   Fayez.txt  FAYEZ.txt  faYEZ.txt etc...
+sudo apt - update
+sudo apt upgrade
+sudo apt install apache
+sudo apt install snail
+sudo apt install vim
+sudo apt install nginx
+sudo su  //root bnny ke liye or to login with the root
+ab baar baar mujhe sudo likhna pr raha ha means admin ka batana pr rha ha so agar mai sudo su ka command donga to wo super user bn jaye ga jsi ki wajah se mai simple apt install vim ya kutch bhi directly install krlo ga mujhe baar baaar linux ko batana ni pare ga sudo ka 
+
+top  //linux ke process ko show krwane ke liye to logout press enter and then q
+ps //pc ke process show 
+ps -ef //sara PID UID display krde ga and wo wo bhi display kare ga jo nazar ni araha hota
+kill (PID which we ca get from top command)
+sudo su  //change normal user to super user
+vim 1.txt(ye file ke andr editing kr skta ha) https://www.computerhope.com/unix/vim.htm(ais web site se vim ko use kesy krte ha docmentation)
+
+adduser harry  //to add another user on the system
+su - harry //to switch to this user
+sudo ufw enable  //for enabling thhe firewall  (https://devanswers.co/install-nginx-mysql-php-lemp-stack-ubuntu-20-04/) configration lemp
+135.181.200.20
+
+*******VIM*******
+save: :w
+save and exit: :wq
+exit: :q
+force: ! (example :w! :q!)
+vertical split: open a document and then type :vsplit /path-to-document/document and this will open the specified document and split the screen so you can see both documents.
+copy: y
+copy a line: yy
+paste: p
+cut: d
+cut a line: dd
+
+*****NGINX******
+sudo apt update //to update all the ubuntu modules
+sudo apt install nginx
+nginx -v  //version
+sudo service start nginx or sudo service stop nginx or sudo service nginx restart  (Ab hamara by defualt nginx server start ho jata ha and by chance agr na ho to server ko hum srat stop kr skte ha khud) (https://linuxhandbook.com/system-has-not-been-booted-with-systemd/)
+service nginx status
+for replacing apche2 with nginx(http://tyhoffman.com/blog/2012/04/remove-apache2-install-nginx/)**
+How to fix 'System has not been booted with systemd' error?(https://linuxhandbook.com/system-has-not-been-booted-with-systemd/)**
+setting up virtual host(https://ubuntu.com/tutorials/install-and-configure-nginx#6-thats-all)
